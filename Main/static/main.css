@@ -1,0 +1,486 @@
+/* Updated background and text color */
+body {
+  background: #f0f4f8;  /* Changed to a light grayish blue */
+  color: #333333;       /* Slightly darker for better contrast */
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2a3f54;  /* A dark blue for headings */
+}
+
+.bg-steel {
+  background-color: #0b3d91; /* Dark blue for navbar */
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #ffffff;  /* White text for navbar links */
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #d1ecf1;  /* Lightened hover effect for navbar links */
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 700;  /* Bold active link */
+}
+
+.content-section {
+  background: #ffffff;  /* White background for content sections */
+  padding: 20px 30px;   /* Improved padding for better spacing */
+  border-radius: 8px;   /* Softer corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Added subtle shadow for depth */
+  margin-bottom: 30px;
+}
+
+/* Updated buttons */
+.btn-outline-primary {
+  color: #0b3d91;
+  border-color: #0b3d91;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0b3d91;
+  color: #ffffff;
+}
+
+/* Article styling */
+.article-title {
+  color: #34495e;
+}
+
+.article-content {
+  color: #5d6d7e;
+  white-space: pre-line;
+}
+
+.article-metadata {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.article-img {
+  height: 80px;
+  width: 80px;
+  margin-right: 20px;
+}
+
+.account-img {
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.account-heading {
+  font-size: 2.8rem;
+  color: #2a3f54;
+}
+
+/* General improvements for home page */
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.header {
+    font-weight: bold;
+    color: #2a3f54;
+    margin-bottom: 20px;
+}
+
+.media.content-section {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover-image {
+    height: 150px;
+    width: auto;
+}
+
+/* ------------------- */
+/* New Hero Section */
+.hero {
+    background-color: #0b3d91;
+    color: white;
+    padding: 50px 0;
+}
+
+/* Improved Form Design */
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.form-control-lg {
+    font-size: 1.25rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #0b3d91;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+.btn-primary:hover {
+    background-color: #093278;
+}
+
+/* Recommendation Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #2a3f54;
+}
+
+.card-text {
+    color: #5d6d7e;
+}
+
+/* Subtle Gradient for the Hero Section */
+.hero {
+    background: linear-gradient(to right, #0b3d91, #2e59d9);
+    color: white;
+    padding: 60px 0;
+}
+
+/* Hero Text Adjustments */
+.hero h1 {
+    font-size: 2.5rem; /* Slightly smaller and more refined */
+    font-weight: 600;  /* Make it less bold */
+}
+
+.hero p {
+    font-size: 1.25rem; /* Smaller subtitle */
+    font-weight: 400;  /* Lighter weight */
+    margin-top: 10px;
+}
+
+/* New Home Page Styles */
+#featured-books h2 {
+    color: #333;
+    font-weight: 700;
+}
+
+#featured-books p {
+    color: #777;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #2a3f54;
+}
+
+.card-text {
+    color: #5d6d7e;
+}
+
+#about h2 {
+    font-weight: 700;
+    color: #2a3f54;
+}
+
+#about p {
+    color: #777;
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+/* Overlay for hero section */
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent black background */
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;  /* Changed text color to white for readability */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;  /* Changed text color to white */
+    margin-top: 10px;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    font-size: 1.25rem;
+}
+/* Account Page Styles */
+.account-img {
+    height: 150px;
+    width: 150px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2a3f54;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.card-body h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-control-lg {
+    padding: 15px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #0b3d91;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+.btn-primary:hover {
+    background-color: #093278;
+}
+/* Upload Book Page Styles */
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.card-body h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-control-lg {
+    padding: 15px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #0b3d91;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+.btn-primary:hover {
+    background-color: #093278;
+}
+/* Delete Book Page Styles */
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.card-body h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-control-lg {
+    padding: 15px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+/* Contact Page Styles */
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.card-body h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-control-lg {
+    padding: 15px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #0b3d91;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #093278;
+}
+/* Register Page Styles */
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.card-body h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-control-lg {
+    padding: 15px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #0b3d91;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #093278;
+}
+
+.border-top {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+/* Login Page Styles */
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.card-body h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-control-lg {
+    padding: 15px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #0b3d91;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #093278;
+}
+
+.form-check-input {
+    margin-top: 5px;
+}
+
+.form-check-label {
+    margin-left: 5px;
+}
+
+.border-top {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.text-muted a {
+    color: #0b3d91;
+}
+
+.text-muted a:hover {
+    text-decoration: underline;
+}

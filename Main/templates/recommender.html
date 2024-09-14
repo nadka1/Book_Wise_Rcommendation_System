@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-5 font-weight-bold">Discover Your Next Favorite Book</h1>
+        <p class="lead">Personalized recommendations tailored just for you.</p>
+    </div>
+</section>
+
+    <!-- Form Section -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg">
+                    <div class="card-body p-5">
+                        <h3 class="card-title text-center mb-4">Book Recommender</h3>
+                        <form method="POST" action="">
+                            {{ form.hidden_tag() }}
+                            <div class="form-group">
+                                {{ form.bookname.label(class="form-label")}}
+                                {% if form.bookname.errors %}
+                                    {{ form.bookname(class="form-control form-control-lg is-invalid")}}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.bookname.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.bookname(class="form-control form-control-lg")}}
+                                {% endif %}
+                            </div>
+
+                            <div class="text-center">
+                                {{ form.submit(class="btn btn-primary btn-lg")}}
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recommendations Section -->
+    <div class="container mt-5">
+<!--        <h2 class="text-center mb-5">Recommended Books</h2>-->
+        <div class="row">
+            {% for w,x,y,z in final %}
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <img class="card-img-top" src="{{ x }}" alt="Book cover" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ w }}</h5>
+                            <p class="card-text"><strong>Author:</strong> {{ z }}</p>
+                            <p class="card-text"><strong>Published:</strong> {{ y }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock content %}
