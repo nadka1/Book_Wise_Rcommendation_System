@@ -10,10 +10,10 @@ def recom(books_user_likes):
 	def get_index_from_title(Title):
 		return df[df.Title == Title]["index"].values[0]
 
-	books = pd.read_csv(r"C:\Users\eslam\Downloads\Book-Recommendation-System-main\Book-Recommendation-System-main\Bookz.csv")
+	books = pd.read_csv(r"C:\Users\nadka\Downloads\Book-Recommendation-System-main\Book-Recommendation-System-main\Bookz.csv")
 	books=books[:1000]
 	df=books
-	img=pd.read_csv(r"C:\Users\eslam\Downloads\Book-Recommendation-System-main\Book-Recommendation-System-main\Imagez.csv")
+	img=pd.read_csv(r"C:\Users\nadka\Downloads\Book-Recommendation-System-main\Book-Recommendation-System-main\Imagez.csv")
 
 
 	features = ['Title','Author','Publisher']
